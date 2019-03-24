@@ -8,7 +8,6 @@ node_exporter_system_user: "{{ node_exporter_system_group }}"
 
 node_exporter_enabled_collectors:
   - systemd
-  - ntp
   - filesystem:
       ignored-mount-points: "^/(sys|proc|dev)($|/)"
       ignored-fs-types: "^(sys|proc|auto)fs$"
