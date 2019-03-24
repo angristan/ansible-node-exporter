@@ -1,4 +1,5 @@
 ---
+
 - name: Copy the Node Exporter systemd service file
   template:
     src: node_exporter.service.j2
