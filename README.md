@@ -1,7 +1,5 @@
 # Ansible role for Node exporter
 
-[![CircleCI](https://circleci.com/gh/angristan/ansible-node-exporter.svg?style=svg)](https://circleci.com/gh/angristan/ansible-node-exporter)
-
 This role will setup [Node exporter](https://github.com/prometheus/node_exporter) on any Linux machine using systemd.
 
 ## Role Variables
