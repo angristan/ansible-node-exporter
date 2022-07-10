@@ -1,7 +1,6 @@
 ---
-
 - name: Check if node_exporter is installed
-  stat:
+  ansible.builtin.stat:
     path: "/usr/local/bin/node_exporter"
   register: node_exporter_binary
 
@@ -13,7 +12,7 @@
     - node_exporter.configure
 
 - name: Ensure Node Exporter is enabled on boot
-  systemd:
+  ansible.builtin.systemd:
     daemon_reload: true
     name: node_exporter
     enabled: true
