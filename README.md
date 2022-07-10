@@ -4,7 +4,7 @@ This role will setup [Node exporter](https://github.com/prometheus/node_exporter
 
 ## Role Variables
 
-- `node_exporter_version`: the version of Node exporter that will be installed. (`0.17.0`).
+- `node_exporter_version`: the version of Node exporter that will be installed.
 
 The role will download the Node exporter release on the deployer and upload the binary to the target host.
 
@@ -31,12 +31,10 @@ node_exporter_enabled_collectors:
 
 To disable collectors, use `node_exporter_enabled_collectors`. It's empty by default.
 
-
 ## Example playbook
 
 ```yaml
 ---
-
 - hosts: myhost
   roles: node-exporter
 ```
