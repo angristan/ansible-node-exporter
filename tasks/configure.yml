@@ -6,4 +6,4 @@
     owner: root
     group: root
     mode: 0644
-  notify: restart node_exporter
+  notify: Restart node_exporter
