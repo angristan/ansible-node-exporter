@@ -4,7 +4,7 @@
     path: "/usr/local/bin/node_exporter"
   register: node_exporter_binary
 
-- include: install.yml
+- include_tasks: install.yml
   when: not node_exporter_binary.stat.exists or node_exporter_force_install
 
 - import_tasks: configure.yml
